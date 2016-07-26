@@ -4,9 +4,12 @@
  * @author Liang <liang@maichong.it>
  */
 
-export default class Favorite extends service.Model {
+import alaska from 'alaska';
+
+export default class Favorite extends alaska.Model {
 
   static label = 'Favorite';
+  static icon = 'heart';
   static defaultColumns = 'pic title user sort createdAt';
   static defaultSort = '-sort';
 
@@ -28,7 +31,7 @@ export default class Favorite extends service.Model {
     },
     user: {
       label: 'User',
-      ref: 'user.User',
+      ref: 'alaska-user.User',
       index: true
     },
     type: {

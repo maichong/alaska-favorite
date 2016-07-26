@@ -6,7 +6,7 @@
 
 import alaska from 'alaska';
 
-export default class FavoriteService extends alaska.Service {
+class FavoriteService extends alaska.Service {
   constructor(options, alaska) {
     options = options || {};
     options.id = options.id || 'alaska-favorite';
@@ -14,3 +14,5 @@ export default class FavoriteService extends alaska.Service {
     super(options, alaska);
   }
 }
+
+export default new FavoriteService();

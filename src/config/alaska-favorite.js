@@ -6,5 +6,7 @@
 
 export default {
   prefix: '/favorite',
-  services: [{ id: 'alaska-user', alias: 'user' }]
+  services: {
+    'alaska-user': {}
+  }
 };
